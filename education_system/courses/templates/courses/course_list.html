@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course List</title>
+</head>
+<body>
+    <h1>Courses</h1>
+    <ul>
+        {% for course in courses %}
+            <li>
+                <strong>{{ course.title }}</strong><br>
+                {{ course.description }}<br>
+                Instructor: {{ course.instructor }}<br>
+                Start: {{ course.start_date }} - End: {{ course.end_date }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
